@@ -144,86 +144,49 @@ td {
 </code></pre>
   </section>
   <section id="program2">
-    <h2>Program 2: College Webpage using Frames and Links</h2>
-  
-    <h3>🔹 sb.html (Main Frameset Page)</h3>
-    <pre><code>&lt;html&gt;
-  &lt;head&gt;&lt;/head&gt;
-  &lt;frameset rows="30%, *"&gt;
-      &lt;frame src="main.html" name="a"&gt;
-      &lt;frameset cols="*, *"&gt;
-          &lt;frame src="home.html" name="b"&gt;
-          &lt;frame src="img.html" name="c"&gt;
-      &lt;/frameset&gt;
-  &lt;/frameset&gt;
-  &lt;/html&gt;
-  </code></pre>
-  
-    <h3>🔹 main.html (Header Frame)</h3>
-    <pre><code>&lt;html&gt;
-  &lt;head&gt;
-      &lt;title&gt;SB College&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body bgcolor="white"&gt;
-      &lt;b style="color: red"&gt;
-          &lt;font size="30"&gt;SB College&lt;/font&gt;
-      &lt;/b&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;
-  </code></pre>
-  
-    <h3>🔹 about.html</h3>
-    <pre><code>&lt;html&gt;
-  &lt;head&gt;
-      &lt;title&gt;About&lt;/title&gt;
-  &lt;/head&gt;
-  &lt;body&gt;
-      &lt;p align="center" style="color: violet"&gt;
-          St. Berchmans College established in 1922. Many celebrities have studied here.
-          Our previous CM of Kerala, Umman Chandi, also studied here.
-      &lt;/p&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;
-  </code></pre>
-  
-    <h3>🔹 course.html</h3>
-    <pre><code>&lt;html&gt;
-  &lt;head&gt;&lt;/head&gt;
-  &lt;body&gt;
-      &lt;h3 align="center" style="color: violet"&gt;Courses&lt;/h3&gt;
-      &lt;br&gt;
-      &lt;ul type="disk"&gt;
-          &lt;li&gt;B.Com&lt;/li&gt;
-          &lt;li&gt;BCA&lt;/li&gt;
-          &lt;li&gt;BA Malayalam&lt;/li&gt;
-          &lt;li&gt;BSc Mathematics&lt;/li&gt;
-          &lt;li&gt;BSc Microbiology&lt;/li&gt;
-      &lt;/ul&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;
-  </code></pre>
-  
-    <h3>🔹 depart.html</h3>
-    <pre><code>&lt;html&gt;
-  &lt;head&gt;&lt;/head&gt;
-  &lt;body&gt;
-      &lt;h3 align="center"&gt;Department&lt;/h3&gt;
-      &lt;br&gt;
-      &lt;ul type="disk"&gt;
-          &lt;li&gt;CS Department&lt;/li&gt;
-          &lt;li&gt;Biochemistry Department&lt;/li&gt;
-          &lt;li&gt;Chemistry Department&lt;/li&gt;
-          &lt;li&gt;English Department&lt;/li&gt;
-      &lt;/ul&gt;
-  &lt;/body&gt;
-  &lt;/html&gt;
-  </code></pre>
-  
-  </section>
-  <h3>🔹 home.html</h3>
+  <h2>Program 2: College Webpage using Frames, Links, Lists, and Anchors</h2>
+
+  <h3>🔹 sb.html</h3>
   <pre><code>&lt;html&gt;
 &lt;head&gt;&lt;/head&gt;
-&lt;body background="sb.jpg"&gt;
+&lt;frameset rows="30%, *"&gt;
+    &lt;frame src="main.html" name="a"&gt;
+    &lt;frameset cols="*, *"&gt;
+        &lt;frame src="home.html" name="b"&gt;
+        &lt;frame src="img.html" name="c"&gt;
+    &lt;/frameset&gt;
+&lt;/frameset&gt;
+&lt;/html&gt;
+</code></pre>
+
+  <h3>🔹 main.html</h3>
+  <pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;SB College&lt;/title&gt;
+&lt;/head&gt;
+&lt;body bgcolor="white"&gt;
+    &lt;b style="color: red"&gt;
+        &lt;font size="30"&gt;SB College&lt;/font&gt;
+    &lt;/b&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+  <h3>🔹 home.html</h3>
+  <pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;Home&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ol&gt;
+        &lt;li&gt;&lt;a href="about.html" target="c"&gt;About&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="course.html" target="c"&gt;Courses&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="depart.html" target="c"&gt;Department&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="library.html" target="c"&gt;Library&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a href="faculty.html" target="c"&gt;Faculty&lt;/a&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;br&gt;
+    Go back &lt;a href="img.html"&gt;Click here&lt;/a&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -232,6 +195,64 @@ td {
   <pre><code>&lt;html&gt;
 &lt;head&gt;&lt;/head&gt;
 &lt;body background="sb.jpg"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+  <h3>🔹 about.html</h3>
+  <pre><code>&lt;html&gt;
+&lt;head&gt;
+    &lt;title&gt;About&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p align="center" style="color: violet"&gt;
+        St. Berchmans College established in 1922. Many celebrities have studied here.
+        Our previous CM of Kerala, Umman Chandi, also studied here.
+    &lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+  <h3>🔹 course.html</h3>
+  <pre><code>&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;
+    &lt;h3 align="center" style="color: violet"&gt;Courses&lt;/h3&gt;
+    &lt;br&gt;
+    &lt;ul type="disk"&gt;
+        &lt;li&gt;B.Com&lt;/li&gt;
+        &lt;li&gt;BCA&lt;/li&gt;
+        &lt;li&gt;BA Malayalam&lt;/li&gt;
+        &lt;li&gt;BSc Mathematics&lt;/li&gt;
+        &lt;li&gt;BSc Microbiology&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+  <h3>🔹 depart.html</h3>
+  <pre><code>&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;
+    &lt;h3 align="center"&gt;Department&lt;/h3&gt;
+    &lt;br&gt;
+    &lt;ul type="disk"&gt;
+        &lt;li&gt;CS Department&lt;/li&gt;
+        &lt;li&gt;Biochemistry Department&lt;/li&gt;
+        &lt;li&gt;Chemistry Department&lt;/li&gt;
+        &lt;li&gt;English Department&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+
+  <h3>🔹 library.html</h3>
+  <pre><code>&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;
+    &lt;p align="center"&gt;
+        &lt;b&gt;Books are the key to knowledge. Our library provides 1000+ books for you.&lt;/b&gt;
+    &lt;/p&gt;
 &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -250,16 +271,8 @@ td {
 &lt;/html&gt;
 </code></pre>
 
-  <h3>🔹 library.html</h3>
-  <pre><code>&lt;html&gt;
-&lt;head&gt;&lt;/head&gt;
-&lt;body&gt;
-    &lt;p align="center"&gt;
-        &lt;b&gt;Books are the key to knowledge. Our library provides 1000+ books for you.&lt;/b&gt;
-    &lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
+</section>
+
 <section id="program3">
     <h2>Program 3: Resume using HTML with Inline CSS</h2>
   
