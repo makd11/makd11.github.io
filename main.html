@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Open Google Document</title>
+  <style>
+    body {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+      background-color: #f9f9f9;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 15px 25px;
+      font-size: 18px;
+      background-color: #1a73e8;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #155ab6;
+    }
+  </style>
+</head>
+<body>
+  <button onclick="openDoc()">Open Google Document</button>
+
+  <script>
+    function openDoc() {
+      window.open("https://docs.google.com/document/d/11K-W2JT2EbZPWWwruql94XYuxDjwFPyzwNvl8AIlmLo/edit?usp=sharing", "_blank");
+    }
+  </script>
+</body>
+</html>
