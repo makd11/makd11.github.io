@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>View PDF</title>
+    <title>Full Screen PDF Viewer</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <h2>View PDF File: main.pdf</h2>
-    <embed src="main.pdf" type="application/pdf" width="100%" height="600px" />
+    <iframe src="main.pdf"></iframe>
 </body>
 </html>
